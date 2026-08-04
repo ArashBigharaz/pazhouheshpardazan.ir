@@ -131,83 +131,88 @@
                         </div>
                     </div>
 
-                    <div class="relative">
-                        <div
-                            class="bg-white rounded-[2rem] shadow-2xl shadow-slate-200 border border-slate-100 p-6 md:p-8">
-                            <div class="flex items-center justify-between mb-6">
+                    <!-- Enhanced Dashboard Section -->
+                    <div class="relative group">
+                        <!-- حاشیه بیرونی برای عمق بیشتر -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2.5rem] opacity-20 blur group-hover:opacity-40 transition duration-1000"></div>
+                        
+                        <div class="relative bg-white rounded-[2rem] shadow-2xl border border-slate-100 p-8">
+                            <div class="flex items-center justify-between mb-8">
                                 <div>
-                                    <p class="text-sm text-slate-400">داشبورد مدیریت پروژه</p>
-                                    <h3 class="text-xl font-black text-slate-900 mt-1">نمای کلی خدمات</h3>
+                                    <p class="text-xs uppercase tracking-widest font-bold text-slate-400">Project Metrics</p>
+                                    <h3 class="text-2xl font-black text-slate-900 mt-1">شاخص‌های عملیاتی</h3>
                                 </div>
-                                <div
-                                    class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl">
+                                <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-200">
                                     <i class="fa-solid fa-chart-pie"></i>
                                 </div>
                             </div>
 
-                            <div class="space-y-4">
-                                <div class="bg-slate-50 rounded-2xl p-4">
+                            <div class="space-y-6">
+                                <!-- Statistical Analysis -->
+                                <div>
                                     <div class="flex items-center justify-between mb-2">
                                         <span class="text-sm font-bold text-slate-700">تحلیل آماری</span>
-                                        <span class="text-sm text-blue-600 font-bold">95%</span>
+                                        <span class="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded-md font-bold">95%</span>
                                     </div>
-                                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
-                                        <div class="h-full bg-blue-600 rounded-full" style="width: 95%;"></div>
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                        <div class="h-full bg-blue-600 rounded-full animate-pulse" style="width: 95%;"></div>
                                     </div>
                                 </div>
 
-                                <div class="bg-slate-50 rounded-2xl p-4">
+                                <!-- Academic Writing -->
+                                <div>
                                     <div class="flex items-center justify-between mb-2">
                                         <span class="text-sm font-bold text-slate-700">نگارش علمی</span>
-                                        <span class="text-sm text-emerald-600 font-bold">90%</span>
+                                        <span class="text-xs bg-emerald-50 text-emerald-600 px-2 py-1 rounded-md font-bold">90%</span>
                                     </div>
-                                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
                                         <div class="h-full bg-emerald-500 rounded-full" style="width: 90%;"></div>
                                     </div>
                                 </div>
 
-                                <div class="bg-slate-50 rounded-2xl p-4">
+                                <!-- Business Intelligence -->
+                                <div>
                                     <div class="flex items-center justify-between mb-2">
                                         <span class="text-sm font-bold text-slate-700">هوش تجاری</span>
-                                        <span class="text-sm text-violet-600 font-bold">88%</span>
+                                        <span class="text-xs bg-violet-50 text-violet-600 px-2 py-1 rounded-md font-bold">88%</span>
                                     </div>
-                                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
                                         <div class="h-full bg-violet-500 rounded-full" style="width: 88%;"></div>
                                     </div>
                                 </div>
 
-                                <div class="bg-slate-50 rounded-2xl p-4">
+                                <!-- Web Design -->
+                                <div>
                                     <div class="flex items-center justify-between mb-2">
                                         <span class="text-sm font-bold text-slate-700">طراحی سایت</span>
-                                        <span class="text-sm text-amber-600 font-bold">92%</span>
+                                        <span class="text-xs bg-amber-50 text-amber-600 px-2 py-1 rounded-md font-bold">92%</span>
                                     </div>
-                                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                                    <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
                                         <div class="h-full bg-amber-500 rounded-full" style="width: 92%;"></div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4 mt-6">
-                                <div class="bg-blue-50 rounded-2xl p-4 text-center">
-                                    <div class="text-2xl font-black text-blue-700">SEM</div>
-                                    <p class="text-xs text-slate-500 mt-1">مدل‌سازی معادلات ساختاری</p>
+                            <div class="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-slate-100">
+                                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100 text-center">
+                                    <div class="text-xl font-black text-slate-800">SEM</div>
+                                    <p class="text-[10px] uppercase font-bold text-slate-400 mt-1">Advanced Model</p>
                                 </div>
-                                <div class="bg-emerald-50 rounded-2xl p-4 text-center">
-                                    <div class="text-2xl font-black text-emerald-700">BI</div>
-                                    <p class="text-xs text-slate-500 mt-1">گزارش‌گیری و داشبورد</p>
+                                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100 text-center">
+                                    <div class="text-xl font-black text-slate-800">BI</div>
+                                    <p class="text-[10px] uppercase font-bold text-slate-400 mt-1">Data Insights</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            class="hidden md:flex absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl border border-slate-100 p-4 items-center gap-3">
-                            <div
-                                class="w-12 h-12 rounded-2xl bg-emerald-500 text-white flex items-center justify-center">
-                                <i class="fa-solid fa-circle-check"></i>
+                        <!-- Floating Badge -->
+                        <div class="hidden md:flex absolute -bottom-6 -right-6 bg-slate-900 text-white rounded-2xl shadow-xl p-5 items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center">
+                                <i class="fa-solid fa-bolt"></i>
                             </div>
                             <div>
-                                <p class="font-black text-slate-900">کیفیت و دقت بالا</p>
-                                <p class="text-sm text-slate-500">همراهی تا تحویل نهایی پروژه</p>
+                                <p class="font-black text-sm">سرعت بالای اجرا</p>
+                                <p class="text-[11px] text-slate-400">کیفیت تضمین‌شده</p>
                             </div>
                         </div>
                     </div>
