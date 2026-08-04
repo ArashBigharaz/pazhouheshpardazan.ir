@@ -8,109 +8,57 @@
     <title>پژوهش پردازان | تحلیل آماری، نگارش علمی و هوش تجاری</title>
 
     <meta name="description"
-        content="ارائه خدمات تخصصی تحلیل آماری (SPSS، SmartPLS)، روش‌شناسی تحقیق، نگارش علمی، متا سنتز، مدل‌سازی ساختاری، طراحی وب‌سایت و داشبوردهای هوش تجاری (Power BI) برای سازمان‌ها و پژوهشگران.">
-    
-    <!-- سئو و ربات‌ها -->
-    <link rel="canonical" href="https://pazhouheshpardazan.ir/" />
-    <meta name="robots" content="index, follow">
+        content="ارائه خدمات تخصصی تحلیل آماری، روش تحقیق، نگارش علمی، طراحی سایت، پایگاه داده و داشبوردهای هوش تجاری.">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- فایل استایل اختصاصی -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- داده‌های ساختاریافته گوگل (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "پژوهش پردازان",
-      "image": "https://pazhouheshpardazan.ir/assets/images/logo.jpg",
-      "url": "https://pazhouheshpardazan.ir/",
-      "telephone": "+989367503837",
-      "email": "pazhouheshpardazan@gmail.com",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IR"
-      },
-      "description": "ارائه خدمات تخصصی تحلیل آماری، روش تحقیق، نگارش علمی، متاسنتز، مدل‌یابی ساختاری، طراحی وب‌سایت و داشبوردهای هوش تجاری.",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "تحلیل آماری و مدل‌سازی ساختاری (SPSS, SmartPLS, Stata)"
-        },
-        {
-          "@type": "Offer",
-          "name": "طراحی داشبوردهای هوش تجاری (Power BI)"
-        },
-        {
-          "@type": "Offer",
-          "name": "مشاوره روش تحقیق، متاسنتز و مدل‌سازی ساختاری (ISM, MICMAC)"
-        }
-      ]
-    }
-    </script>
 </head>
 
 <body class="bg-slate-50 text-slate-800">
 
     <!-- =====================================
-         هدر (Glassmorphism)
+         Header
     ====================================== -->
-    <header class="site-header fixed top-0 right-0 left-0 z-50">
+    <header id="site-header" class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur border-b border-slate-200">
         <div class="container mx-auto px-5">
             <div class="flex items-center justify-between h-20">
 
-                <!-- لوگو -->
-                <a href="index.html" class="flex items-center gap-3 group" aria-label="صفحه اصلی پژوهش پردازان">
-                    <img
-                        src="assets/images/logo.jpg"
-                        alt="لوگوی پژوهش پردازان"
-                        class="w-14 h-14 md:w-16 md:h-16 object-contain rounded-xl"
-                    >
-
+                <a href="index.html" class="flex items-center gap-3">
+                    <img src="assets/images/logo.jpg" alt="لوگوی پژوهش پردازان" class="w-12 h-12 rounded-xl object-cover">
                     <div>
-                        <h1 class="text-lg md:text-xl font-extrabold text-slate-900 leading-tight">
-                             پژوهش پردازان
-                        </h1>
-                        <p class="text-xs md:text-sm text-slate-500">
-                             راهکارهای پژوهش و تحلیل داده
-                        </p>
+                        <h1 class="text-lg font-black text-slate-900">پژوهش پردازان</h1>
+                        <p class="text-xs text-slate-500">تحلیل، پژوهش و توسعه</p>
                     </div>
                 </a>
 
-                <!-- منوی دسکتاپ -->
                 <nav class="hidden lg:flex items-center gap-7">
-                    <a class="nav-link active" href="index.html">خانه</a>
+                    <a class="nav-link" href="index.html">خانه</a>
                     <a class="nav-link" href="services.html">خدمات</a>
                     <a class="nav-link" href="contact.html">تماس با ما</a>
                 </nav>
 
-                <!-- دکمه سفارش دسکتاپ -->
-                <a href="contact.html"
-                    class="hidden lg:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-blue-200">
-                    <i class="fa-solid fa-paper-plane text-xs"></i>
-                    ثبت درخواست و مشاوره
-                </a>
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="contact.html"
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-bold transition">
+                        ثبت درخواست
+                    </a>
+                </div>
 
-                <!-- دکمه بازکردن منوی موبایل -->
                 <button id="mobile-menu-button"
-                    class="lg:hidden w-11 h-11 bg-slate-100/80 hover:bg-slate-200/80 rounded-xl transition flex items-center justify-center"
+                    class="lg:hidden w-11 h-11 bg-slate-100 hover:bg-slate-200 rounded-xl transition"
                     aria-label="باز کردن منو">
-                    <i class="fa-solid fa-bars text-xl text-slate-700"></i>
+                    <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- منوی موبایل -->
         <div id="mobile-menu" class="mobile-menu lg:hidden">
             <div class="container mx-auto px-5 py-5 flex flex-col gap-1">
-                <a class="mobile-nav-link active" href="index.html">خانه</a>
+                <a class="mobile-nav-link" href="index.html">خانه</a>
                 <a class="mobile-nav-link" href="services.html">خدمات ما</a>
                 <a class="mobile-nav-link" href="index.html#process">فرایند همکاری</a>
                 <a class="mobile-nav-link" href="index.html#portfolio">نمونه‌کارها</a>
@@ -118,549 +66,476 @@
                 <a class="mobile-nav-link" href="contact.html">تماس با ما</a>
 
                 <a href="contact.html"
-                    class="mt-3 text-center bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl font-bold transition-colors">
+                    class="mt-3 text-center bg-blue-600 text-white px-5 py-3 rounded-xl font-bold">
                     ثبت درخواست و مشاوره
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- =====================================
+         Main
+    ====================================== -->
     <main>
 
-        <!-- =====================================
-             بخش معرفی اصلی (Hero)
-        ====================================== -->
-        <section id="home" class="hero-section pt-36 pb-20 md:pt-44 md:pb-28 overflow-hidden">
+        <!-- Hero -->
+        <section id="home" class="hero-section pt-36 pb-20 md:pb-28">
             <div class="container mx-auto px-5">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-                    <!-- متن Hero -->
-                    <div class="text-center lg:text-right">
-                        <div
-                            class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 border border-blue-100 px-4 py-2 rounded-full text-sm font-bold">
-                            <i class="fa-solid fa-sparkles text-xs"></i>
-                            راهکارهای آکادمیک و توسعه داده‌محور کسب‌وکارها
-                        </div>
+                    <div class="text-right">
+                        <span class="section-badge">
+                            خدمات تخصصی پژوهش، تحلیل و توسعه
+                        </span>
 
-                        <h2 class="mt-6 text-4xl md:text-5xl xl:text-6xl font-black leading-[1.45] text-slate-900">
-                            داده‌ها را به
-                            <span class="text-blue-600">دانش کاربردی</span>
-                            تبدیل کنید.
+                        <h2 class="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.9] text-slate-900 mt-5">
+                            راهکارهای علمی و داده‌محور برای
+                            <span class="text-blue-600">پژوهشگران، دانشجویان و سازمان‌ها</span>
                         </h2>
 
-                        <p class="mt-6 text-base md:text-lg text-slate-600 leading-9 max-w-2xl mx-auto lg:mx-0">
-                            ارائه خدمات تخصصی روش‌شناسی پژوهش، تحلیل آماری پیشرفته، متا سنتز، پیاده‌سازی مدل‌سازی ساختاری تفسیری (ISM)، تحلیل داده‌های کیفی و همچنین طراحی سامانه‌های تجاری و پایگاه داده با استانداردهای علمی و کاربردی.
+                        <p class="text-lg text-slate-600 leading-9 mt-6 max-w-2xl">
+                            پژوهش پردازان با تمرکز بر تحلیل آماری، روش تحقیق، نگارش علمی، طراحی داشبوردهای مدیریتی،
+                            توسعه وب‌سایت و پایگاه داده، خدماتی دقیق، حرفه‌ای و متناسب با نیازهای دانشگاهی و سازمانی ارائه می‌کند.
                         </p>
 
-                        <div class="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                        <div class="flex flex-wrap gap-4 mt-8 justify-start lg:justify-start">
                             <a href="services.html"
-                                class="inline-flex justify-center items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 rounded-xl font-bold transition-all shadow-xl shadow-blue-200">
-                                مشاهده حوزه‌های خدمات
-                                <i class="fa-solid fa-arrow-left"></i>
+                                class="bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 rounded-2xl font-bold transition shadow-lg shadow-blue-200">
+                                مشاهده خدمات
                             </a>
 
                             <a href="contact.html"
-                                class="inline-flex justify-center items-center gap-2 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 px-7 py-4 rounded-xl font-bold transition-all">
-                                <i class="fa-solid fa-comments"></i>
-                                دریافت مشاوره اولیه رایگان
+                                class="bg-white hover:bg-slate-100 text-slate-800 px-7 py-4 rounded-2xl font-bold transition border border-slate-200">
+                                دریافت مشاوره
                             </a>
                         </div>
 
-                        <!-- شاخص‌های اعتماد -->
-                        <div class="mt-10 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-3 text-sm text-slate-600">
-                            <span class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
-                                ارزیابی اولیه و تحلیل امکان‌سنجی
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
-                                تحویل مستند به همراه گزارش‌های تفسیری
-                            </span>
-                            <span class="flex items-center gap-2">
-                                <i class="fa-solid fa-circle-check text-emerald-500"></i>
-                                پشتیبانی علمی و فنی گام‌به‌گام
-                            </span>
+                        <div class="grid sm:grid-cols-3 gap-4 mt-10">
+                            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+                                <div class="text-blue-600 text-xl mb-2"><i class="fa-solid fa-chart-line"></i></div>
+                                <h3 class="font-bold text-slate-900">تحلیل آماری</h3>
+                                <p class="text-sm text-slate-500 mt-1">از تحلیل مقدماتی تا مدل‌سازی پیشرفته</p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+                                <div class="text-blue-600 text-xl mb-2"><i class="fa-solid fa-book-open"></i></div>
+                                <h3 class="font-bold text-slate-900">نگارش علمی</h3>
+                                <p class="text-sm text-slate-500 mt-1">مقاله، پایان‌نامه و گزارش‌های تخصصی</p>
+                            </div>
+
+                            <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-100">
+                                <div class="text-blue-600 text-xl mb-2"><i class="fa-solid fa-laptop-code"></i></div>
+                                <h3 class="font-bold text-slate-900">توسعه وب و BI</h3>
+                                <p class="text-sm text-slate-500 mt-1">داشبورد، وب‌سایت و سامانه‌های داده‌محور</p>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- کارت نمایشی Hero -->
                     <div class="relative">
-                        <div class="hero-glow"></div>
-
-                        <div class="relative bg-white rounded-3xl p-5 md:p-7 shadow-2xl border border-slate-100">
+                        <div class="bg-white rounded-[2rem] shadow-2xl border border-slate-200 p-6 md:p-8">
                             <div class="flex items-center justify-between mb-6">
                                 <div>
-                                    <p class="text-xs text-slate-500 font-bold">پایش شاخص‌های آماری</p>
-                                    <h3 class="font-black text-lg mt-1 text-slate-800">داشبورد تحلیلی پروژه</h3>
+                                    <p class="text-sm text-slate-400">داشبورد مدیریتی</p>
+                                    <h3 class="text-xl font-black text-slate-900 mt-1">تحلیل عملکرد پروژه‌ها</h3>
                                 </div>
-                                <div class="w-11 h-11 flex items-center justify-center bg-blue-50 text-blue-600 rounded-xl">
-                                    <i class="fa-solid fa-chart-pie text-xl"></i>
-                                </div>
-                            </div>
-
-                            <!-- نمودار نمایشی -->
-                            <div class="bg-slate-50 rounded-2xl p-5">
-                                <div class="flex justify-between items-end h-44 gap-3">
-                                    <div class="chart-bar h-[35%]"></div>
-                                    <div class="chart-bar h-[52%]"></div>
-                                    <div class="chart-bar h-[43%]"></div>
-                                    <div class="chart-bar h-[75%]"></div>
-                                    <div class="chart-bar h-[60%]"></div>
-                                    <div class="chart-bar h-[92%]"></div>
-                                    <div class="chart-bar h-[78%]"></div>
-                                </div>
-
-                                <div class="flex justify-between text-xs text-slate-400 mt-3">
-                                    <span>فروردین</span>
-                                    <span>اردیبهشت</span>
-                                    <span>خرداد</span>
-                                    <span>تیر</span>
+                                <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-chart-pie"></i>
                                 </div>
                             </div>
 
-                            <div class="grid grid-cols-2 gap-4 mt-5">
-                                <div class="bg-blue-50 rounded-xl p-4">
-                                    <p class="text-[11px] text-slate-500 font-bold">میزان برازش مدل</p>
-                                    <p class="mt-1 font-black text-2xl text-blue-600">۸۶٪</p>
+                            <div class="space-y-4">
+                                <div class="bg-slate-50 rounded-2xl p-4 border border-slate-100">
+                                    <div class="flex items-center justify-between mb-3">
+                                        <span class="text-sm text-slate-500">پیشرفت تحلیلی</span>
+                                        <span class="text-sm font-bold text-blue-600">84%</span>
+                                    </div>
+                                    <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+                                        <div class="h-full bg-blue-600 rounded-full" style="width: 84%;"></div>
+                                    </div>
                                 </div>
 
-                                <div class="bg-emerald-50 rounded-xl p-4">
-                                    <p class="text-[11px] text-slate-500 font-bold">وضعیت اعتبار پژوهش</p>
-                                    <p class="mt-1 font-black text-lg text-emerald-600">تأییدشده (گویا)</p>
+                                <div class="grid grid-cols-3 gap-3">
+                                    <div class="bg-slate-50 rounded-2xl p-4 text-center border border-slate-100">
+                                        <div class="text-2xl font-black text-slate-900">120+</div>
+                                        <div class="text-xs text-slate-500 mt-1">پروژه تحلیلی</div>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 text-center border border-slate-100">
+                                        <div class="text-2xl font-black text-slate-900">80+</div>
+                                        <div class="text-xs text-slate-500 mt-1">مدل و مقاله</div>
+                                    </div>
+                                    <div class="bg-slate-50 rounded-2xl p-4 text-center border border-slate-100">
+                                        <div class="text-2xl font-black text-slate-900">50+</div>
+                                        <div class="text-xs text-slate-500 mt-1">همکار علمی</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-gradient-to-br from-blue-600 to-slate-900 rounded-3xl p-5 text-white">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <p class="text-sm text-blue-100">گزارش تحلیلی</p>
+                                            <h4 class="font-black text-lg mt-1">تصمیم‌سازی مبتنی بر داده</h4>
+                                        </div>
+                                        <i class="fa-solid fa-arrow-trend-up text-2xl"></i>
+                                    </div>
+
+                                    <div class="mt-5 grid grid-cols-4 gap-2 items-end h-28">
+                                        <div class="bg-white/20 rounded-t-xl h-10"></div>
+                                        <div class="bg-white/30 rounded-t-xl h-16"></div>
+                                        <div class="bg-white/50 rounded-t-xl h-20"></div>
+                                        <div class="bg-white rounded-t-xl h-24"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- کارت شناور -->
-                        <div
-                            class="hidden md:flex absolute -bottom-7 -right-8 bg-white shadow-xl border border-slate-100 rounded-2xl p-4 items-center gap-3">
-                            <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
-                                <i class="fa-solid fa-check text-lg"></i>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400 font-bold">برونداد نهایی</p>
-                                <p class="font-bold text-sm text-slate-800">آماده ارائه و دفاع</p>
+                        <div class="absolute -bottom-6 -left-4 bg-white rounded-2xl shadow-xl border border-slate-200 p-4 hidden md:block">
+                            <div class="flex items-center gap-3">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                    <i class="fa-solid fa-shield-heart"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-slate-900">پشتیبانی تخصصی</p>
+                                    <p class="text-xs text-slate-500">همراهی در تمام مراحل پروژه</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             آمار (با فعل و متن اصلاح‌شده علمی)
-        ====================================== -->
-        <section class="py-10 bg-white border-y border-slate-100 reveal">
+        <!-- Stats -->
+        <section class="pb-12 md:pb-16">
             <div class="container mx-auto px-5">
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-black text-blue-600">۱۲۰+</p>
-                        <p class="mt-2 text-sm text-slate-500">پروژه تحلیلی و آماری خاتمه‌یافته</p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100">
+                        <div class="text-3xl font-black text-blue-600">۱۲۰+</div>
+                        <p class="text-slate-500 mt-2 text-sm">پروژه تحلیلی</p>
                     </div>
 
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-black text-blue-600">۸۰+</p>
-                        <p class="mt-2 text-sm text-slate-500">توسعه مدل و مقالات علمی معتبر</p>
+                    <div class="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100">
+                        <div class="text-3xl font-black text-blue-600">۸۰+</div>
+                        <p class="text-slate-500 mt-2 text-sm">توسعه مدل و مقاله</p>
                     </div>
 
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-black text-blue-600">۵۰+</p>
-                        <p class="mt-2 text-sm text-slate-500">پژوهشگر و سازمان همکار</p>
+                    <div class="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100">
+                        <div class="text-3xl font-black text-blue-600">۵۰+</div>
+                        <p class="text-slate-500 mt-2 text-sm">پژوهشگر و سازمان همکار</p>
                     </div>
 
-                    <div class="text-center">
-                        <p class="text-3xl md:text-4xl font-black text-blue-600">۲۴/۷</p>
-                        <p class="mt-2 text-sm text-slate-500">پشتیبانی و پاسخ‌گویی مستمر</p>
+                    <div class="bg-white rounded-3xl p-6 text-center shadow-sm border border-slate-100">
+                        <div class="text-3xl font-black text-blue-600">۲۴/۷</div>
+                        <p class="text-slate-500 mt-2 text-sm">پشتیبانی و پاسخ‌گویی</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             خدمات
-        ====================================== -->
+        <!-- Services -->
         <section id="services" class="py-20 md:py-28 reveal">
             <div class="container mx-auto px-5">
-
-                <div class="max-w-2xl mx-auto text-center">
-                    <span class="section-badge">خدمات تخصصی ما</span>
-                    <h2 class="section-title">حوزه‌های فعالیت پژوهش پردازان</h2>
-                    <p class="section-description">
-                        ما با تمرکز بر متدهای علمی استاندارد و با تکیه بر تحلیل‌های دقیق آماری و مدل‌سازی‌های ساختاری، پروژه‌های دانشگاهی و سازمانی شما را پوشش می‌دهیم.
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="section-badge">خدمات ما</span>
+                    <h2 class="section-title mt-4">خدمات تخصصی پژوهش پردازان</h2>
+                    <p class="section-description mt-5">
+                        مجموعه‌ای از خدمات علمی، تحلیلی و فنی برای پاسخ‌گویی به نیازهای پژوهشی، آموزشی و مدیریتی در سطح دانشگاهی و سازمانی.
                     </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-12">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-14">
 
-                    <article class="service-card">
-                        <div class="service-icon bg-blue-100 text-blue-600">
-                            <i class="fa-solid fa-chart-column"></i>
-                        </div>
-                        <h3>تحلیل آماری و مدل‌سازی ساختاری</h3>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <h3>تحلیل آماری و مدل‌سازی</h3>
                         <p>
-                            پیاده‌سازی آزمون‌های آماری پارامتریک و غیرپارامتریک، رگرسیون چندگانه، مدل‌سازی معادلات ساختاری (SEM) و تحلیل عاملی تأییدی.
+                            انجام تحلیل‌های توصیفی و استنباطی، رگرسیون، SEM، PLS، تحلیل عاملی، آزمون فرضیه و مدل‌سازی داده‌محور با نرم‌افزارهای تخصصی.
                         </p>
-                        <ul class="list-none p-0 mt-3 space-y-1 text-sm text-slate-500">
-                            <li><i class="fa-solid fa-check text-blue-500 ml-1 text-xs"></i> نرم‌افزارهای SPSS، SmartPLS، AMOS و Stata</li>
-                            <li><i class="fa-solid fa-check text-blue-500 ml-1 text-xs"></i> مدل‌سازی ساختاری-تفسیری (ISM و MICMAC)</li>
-                            <li><i class="fa-solid fa-check text-blue-500 ml-1 text-xs"></i> گزارش تفسیری جامع خروجی‌ها بر اساس فرمت APA</li>
-                        </ul>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-icon bg-violet-100 text-violet-600">
-                            <i class="fa-solid fa-file-lines"></i>
-                        </div>
-                        <h3>روش‌شناسی تحقیق و نگارش علمی</h3>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                        <h3>روش‌شناسی و نگارش علمی</h3>
                         <p>
-                            همراهی و ارائه خدمات مشاوره‌ای در تنظیم پروپوزال، طرح‌های پژوهشی کاربردی، روش‌های تلفیقی (آمیخته) و فراتحلیل‌ها.
+                            تدوین پروپوزال، پایان‌نامه، مقاله علمی، فصل روش تحقیق، طراحی ابزار جمع‌آوری داده و بازنویسی علمی متون پژوهشی.
                         </p>
-                        <ul class="list-none p-0 mt-3 space-y-1 text-sm text-slate-500">
-                            <li><i class="fa-solid fa-check text-violet-500 ml-1 text-xs"></i> پیاده‌سازی فراترکیب (Meta-Synthesis) و CASP</li>
-                            <li><i class="fa-solid fa-check text-violet-500 ml-1 text-xs"></i> طراحی چارچوب مفهومی و فرضیه‌سازی علمی</li>
-                            <li><i class="fa-solid fa-check text-violet-500 ml-1 text-xs"></i> مشاوره و ویرایش فنی ساختار مقالات و رساله‌ها</li>
-                        </ul>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-icon bg-emerald-100 text-emerald-600">
-                            <i class="fa-solid fa-chart-pie"></i>
-                        </div>
-                        <h3>داشبوردسازی و هوش تجاری (BI)</h3>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                        <h3>Power BI و داشبورد مدیریتی</h3>
                         <p>
-                            یکپارچه‌سازی کلان‌داده‌های سازمانی و تبدیل آن‌ها به گزارش‌های تعاملیِ پویا جهت ردیابی شاخص‌های کلیدی عملکرد (KPIs).
+                            طراحی داشبوردهای تحلیلی و مدیریتی برای گزارش‌گیری حرفه‌ای، پایش شاخص‌ها و تصمیم‌گیری مبتنی بر داده.
                         </p>
-                        <ul class="list-none p-0 mt-3 space-y-1 text-sm text-slate-500">
-                            <li><i class="fa-solid fa-check text-emerald-500 ml-1 text-xs"></i> توسعه و پیاده‌سازی داشبوردهای Power BI</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 ml-1 text-xs"></i> فرمول‌نویسی پیشرفته DAX و پاک‌سازی داده‌ها</li>
-                            <li><i class="fa-solid fa-check text-emerald-500 ml-1 text-xs"></i> طراحی مدل‌های بهینه گزارش‌گیری مدیریتی</li>
-                        </ul>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-icon bg-orange-100 text-orange-600">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3>توسعه سامانه‌های تحت وب و فرانت‌اند</h3>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>طراحی و توسعه وب</h3>
                         <p>
-                            توسعه و طراحی وب‌سایت‌های بهینه، تعاملی و واکنش‌گرا متناسب با نیازهای تجاری، شخصی و علمی.
+                            طراحی سایت‌های شرکتی، شخصی و خدماتی با ظاهر حرفه‌ای، ساختار چندصفحه‌ای، رابط کاربرپسند و استانداردهای سئو.
                         </p>
-                        <ul class="list-none p-0 mt-3 space-y-1 text-sm text-slate-500">
-                            <li><i class="fa-solid fa-check text-orange-500 ml-1 text-xs"></i> طراحی رابط کاربری با HTML، CSS و Tailwind</li>
-                            <li><i class="fa-solid fa-check text-orange-500 ml-1 text-xs"></i> توسعه بخش فرانت‌اند به روش Component-based</li>
-                            <li><i class="fa-solid fa-check text-orange-500 ml-1 text-xs"></i> پیاده‌سازی سیستم‌های ارتباط با مشتریان و وبلاگ</li>
-                        </ul>
-                    </article>
+                    </div>
 
-                    <article class="service-card">
-                        <div class="service-icon bg-rose-100 text-rose-600">
-                            <i class="fa-solid fa-database"></i>
-                        </div>
-                        <h3>مدل‌سازی و طراحی پایگاه داده</h3>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>طراحی پایگاه داده</h3>
                         <p>
-                            معماری ساختار داده، بهینه‌سازی روابط میان‌جدولی، و ایجاد کوئری‌های کارآمد برای مدیریت پایدار اطلاعات سازمان.
+                            طراحی ساختار داده، نرمال‌سازی، ایجاد بانک اطلاعاتی و پیاده‌سازی راهکارهای ذخیره و بازیابی اطلاعات برای پروژه‌های مختلف.
                         </p>
-                        <ul class="list-none p-0 mt-3 space-y-1 text-sm text-slate-500">
-                            <li><i class="fa-solid fa-check text-rose-500 ml-1 text-xs"></i> طراحی پایگاه‌ داده‌های SQL Server و MySQL</li>
-                            <li><i class="fa-solid fa-check text-rose-500 ml-1 text-xs"></i> بهینه‌سازی کوئری‌های پیچیده و کاهش زمان پاسخ</li>
-                            <li><i class="fa-solid fa-check text-rose-500 ml-1 text-xs"></i> مستندسازی ERD و ساختار داده سازمان</li>
-                        </ul>
-                    </article>
+                    </div>
 
-                    <article class="service-card bg-gradient-to-br from-slate-900 to-blue-950 text-white border-0">
-                        <div class="service-icon bg-white/10 text-white">
-                            <i class="fa-solid fa-comments"></i>
-                        </div>
-                        <h3 class="text-white">نیاز به تحلیل یا مشاوره دارید؟</h3>
-                        <p class="text-slate-300">
-                            متدولوژی‌ها و داده‌های خود را ارسال کنید تا ساختار تحلیل، نوع نرم‌افزار و برآورد فنی در کوتاه‌ترین زمان ارزیابی و تدوین شود.
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>مشاوره تخصصی</h3>
+                        <p>
+                            ارائه مشاوره در حوزه پژوهش، تحلیل، طراحی سیستم، انتخاب روش مناسب اجرا و برنامه‌ریزی پروژه‌های علمی و کاربردی.
                         </p>
-                        <a href="contact.html" class="inline-flex items-center gap-2 mt-5 font-bold text-blue-300 hover:text-white transition-colors">
-                            ثبت درخواست مشاوره علمی
-                            <i class="fa-solid fa-arrow-left"></i>
-                        </a>
-                    </article>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="services.html"
+                        class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-7 py-4 rounded-2xl font-bold transition">
+                        مشاهده جزئیات خدمات
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             مراحل همکاری
-        ====================================== -->
-        <section id="process" class="py-20 md:py-28 bg-slate-900 text-white reveal">
+        <!-- Process -->
+        <section id="process" class="py-20 md:py-28 bg-white reveal">
             <div class="container mx-auto px-5">
-                <div class="max-w-2xl mx-auto text-center">
-                    <span class="inline-block text-sm font-bold text-blue-300">فرایند پیاده‌سازی</span>
-                    <h2 class="text-3xl md:text-4xl font-black mt-3">مسیر شفاف و گام‌به‌گام تا ارائه نهایی</h2>
-                    <p class="text-slate-300 mt-5 leading-8">
-                        روند اجرای پروژه‌ها بر اساس زمان‌بندی دقیق و فازهای بازبینی متعدد طراحی شد تا از تطابق کامل خروجی با چارچوب‌های نظری اطمینان حاصل شود.
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="section-badge">فرایند همکاری</span>
+                    <h2 class="section-title mt-4">مراحل اجرای پروژه</h2>
+                    <p class="section-description mt-5">
+                        پروژه‌ها با رویکردی شفاف، مرحله‌بندی‌شده و متناسب با نیاز کارفرما یا پژوهشگر اجرا می‌شوند.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6 mt-14">
+
                     <div class="process-card">
-                        <span>۰۱</span>
-                        <div class="process-icon"><i class="fa-solid fa-message"></i></div>
-                        <h3>ارسال مستندات پروژه</h3>
-                        <p>فرضیه‌ها، داده‌های خام یا متدولوژی مورد نظر خود را بارگذاری و ارسال می‌کنید.</p>
+                        <div class="process-icon">۱</div>
+                        <h3>ثبت درخواست</h3>
+                        <p>نیازها، موضوع پروژه و مستندات اولیه توسط شما ارسال می‌شود.</p>
                     </div>
 
                     <div class="process-card">
-                        <span>۰۲</span>
-                        <div class="process-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                        <h3>امکان‌سنجی و برآورد فنی</h3>
-                        <p>داده‌ها ارزیابی و بهترین ابزار تحلیلی و برآورد زمان تحویل تعیین می‌شوند.</p>
+                        <div class="process-icon">۲</div>
+                        <h3>بررسی و ارزیابی</h3>
+                        <p>پروژه از نظر زمان، حجم کار، روش اجرا و سطح تخصص مورد بررسی قرار می‌گیرد.</p>
                     </div>
 
                     <div class="process-card">
-                        <span>۰۳</span>
-                        <div class="process-icon"><i class="fa-solid fa-laptop-file"></i></div>
-                        <h3>اجرای فرآیند تحلیل و توسعه</h3>
-                        <p>فرآیند کدنویسی، تحلیل آماری یا مدل‌سازی با بالاترین دقت علمی آغاز می‌گردد.</p>
+                        <div class="process-icon">۳</div>
+                        <h3>اجرا و گزارش‌دهی</h3>
+                        <p>خدمات موردنظر با هماهنگی مستمر و گزارش مرحله‌ای انجام می‌شود.</p>
                     </div>
 
                     <div class="process-card">
-                        <span>۰۴</span>
-                        <div class="process-icon"><i class="fa-solid fa-box-open"></i></div>
-                        <h3>تحویل و ارائه گزارش تفسیری</h3>
-                        <p>نتایج، مدل‌ها و تحلیل‌های تفصیلی در قالب فرمت‌های استاندارد تحویل داده می‌شوند.</p>
+                        <div class="process-icon">۴</div>
+                        <h3>تحویل و پشتیبانی</h3>
+                        <p>خروجی نهایی تحویل داده می‌شود و پشتیبانی لازم برای اصلاحات ارائه خواهد شد.</p>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             نمونه کارها
-        ====================================== -->
-        <section id="portfolio" class="py-20 md:py-28 bg-white reveal">
+        <!-- Portfolio -->
+        <section id="portfolio" class="py-20 md:py-28 reveal">
             <div class="container mx-auto px-5">
-                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-5">
-                    <div class="max-w-2xl">
-                        <span class="section-badge">پروژه‌های اجرایی</span>
-                        <h2 class="section-title text-right">حوزه‌هایی که در آن‌ها فعالیت داشتیم</h2>
-                        <p class="section-description text-right">
-                            برخی از زمینه‌های پیاده‌سازی‌شده در حوزه‌های هوش تجاری، مدل‌سازی معادلات ساختاری و سیستم‌های نرم‌افزاری تجاری.
-                        </p>
-                    </div>
-
-                    <a href="contact.html" class="text-blue-600 font-bold hover:text-blue-800 transition-colors flex items-center gap-1 self-start md:self-auto">
-                        درخواست جزئیات پروژه‌ها
-                        <i class="fa-solid fa-arrow-left text-xs mr-1"></i>
-                    </a>
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="section-badge">نمونه‌کارها</span>
+                    <h2 class="section-title mt-4">برخی حوزه‌های اجرایی و پروژه‌های مشابه</h2>
+                    <p class="section-description mt-5">
+                        تجربه فعالیت در پروژه‌های دانشگاهی، پایان‌نامه‌ای، تحقیقاتی و سازمانی با تمرکز بر کیفیت علمی و کاربردپذیری.
+                    </p>
                 </div>
 
-                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7 mt-12">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-14">
 
-                    <article class="portfolio-card">
-                        <div class="portfolio-cover cover-bi">
-                            <span>هوش تجاری</span>
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-cover cover-bi"></div>
                         <div class="p-6">
-                            <p class="text-xs text-blue-600 font-bold">Power BI · مدل‌سازی داده‌ها</p>
-                            <h3>پیاده‌سازی داشبورد پایش شاخص‌های عملکرد</h3>
-                            <p>طراحی سیستم تجمیع داده‌ها و ارزیابی بهره‌وری نیروی انسانی در بستر ابزارهای هوش تجاری.</p>
+                            <h3>داشبورد هوش تجاری</h3>
+                            <p>
+                                طراحی داشبوردهای مدیریتی برای تحلیل عملکرد، گزارش‌گیری لحظه‌ای و پایش شاخص‌های کلیدی سازمانی.
+                            </p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="portfolio-card">
-                        <div class="portfolio-cover cover-research">
-                            <span>پژوهش و تحلیل آماری</span>
-                            <i class="fa-solid fa-microscope"></i>
-                        </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-cover cover-research"></div>
                         <div class="p-6">
-                            <p class="text-xs text-violet-600 font-bold">SEM · معادلات ساختاری</p>
-                            <h3>تحلیل مسیر و بررسی متغیرهای میانجی</h3>
-                            <p>سنجش برازش مدل‌های مفهومی با استفاده از مدل‌سازی حداقل مربعات جزئی در پروژه‌های پیچیده علمی.</p>
+                            <h3>پروژه‌های پژوهشی و دانشگاهی</h3>
+                            <p>
+                                همراهی در تدوین ساختار پژوهش، تحلیل داده، تفسیر نتایج و نگارش علمی متناسب با استانداردهای دانشگاهی.
+                            </p>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="portfolio-card">
-                        <div class="portfolio-cover cover-web">
-                            <span>طراحی سامانه‌های وب</span>
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
+                    <div class="portfolio-card">
+                        <div class="portfolio-cover cover-web"></div>
                         <div class="p-6">
-                            <p class="text-xs text-emerald-600 font-bold">UI/UX · Tailwind CSS</p>
-                            <h3>توسعه وب‌سایت‌های بهینه ارائه‌دهنده خدمات</h3>
-                            <p>طراحی فرانت‌اند واکنش‌گرا و پیاده‌سازی اتصالات API جهت دریافت درخواست‌های کاربران به صورت بلادرنگ.</p>
+                            <h3>طراحی سایت و سامانه</h3>
+                            <p>
+                                پیاده‌سازی وب‌سایت‌های حرفه‌ای، چندصفحه‌ای و داده‌محور با تمرکز بر کارایی، تجربه کاربری و توسعه‌پذیری.
+                            </p>
                         </div>
-                    </article>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             درباره ما
-        ====================================== -->
-        <section id="about" class="py-20 md:py-28 bg-slate-50 reveal">
-            <div class="container mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+        <!-- About -->
+        <section id="about" class="py-20 md:py-28 bg-white reveal">
+            <div class="container mx-auto px-5">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
 
-                <div class="relative">
                     <div class="about-visual">
                         <div class="about-main-icon">
-                            <i class="fa-solid fa-lightbulb"></i>
+                            <i class="fa-solid fa-graduation-cap"></i>
                         </div>
 
-                        <div class="about-floating-card top-card">
-                            <i class="fa-solid fa-chart-simple text-blue-600"></i>
-                            <div>
-                                <b>تحلیل علمی مستند</b>
-                                <span>صحت‌سنجی آماری داده‌ها</span>
+                        <div class="about-floating-card top-6 right-6">
+                            <i class="fa-solid fa-microscope text-blue-600"></i>
+                            <span>رویکرد پژوهش‌محور</span>
+                        </div>
+
+                        <div class="about-floating-card bottom-6 left-6">
+                            <i class="fa-solid fa-laptop-code text-emerald-600"></i>
+                            <span>راهکارهای فنی و تحلیلی</span>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <span class="section-badge">درباره ما</span>
+                        <h2 class="section-title mt-4 text-right">پژوهش پردازان؛ تلفیق دانش، تجربه و فناوری</h2>
+                        <p class="section-description mt-5 text-right max-w-none">
+                            پژوهش پردازان با هدف ارائه خدمات تخصصی در زمینه تحلیل داده، روش تحقیق، نگارش علمی، طراحی سامانه‌های اطلاعاتی و توسعه وب شکل گرفت.
+                            تمرکز ما بر ارائه خروجی دقیق، قابل‌اعتماد و متناسب با نیازهای واقعی مشتریان در محیط‌های علمی، دانشگاهی و سازمانی است.
+                        </p>
+
+                        <div class="grid sm:grid-cols-2 gap-4 mt-8">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>تسلط بر نرم‌افزارها و ابزارهای تخصصی</span>
                             </div>
-                        </div>
 
-                        <div class="about-floating-card bottom-card">
-                            <i class="fa-solid fa-graduation-cap text-violet-600"></i>
-                            <div>
-                                <b>رویکرد متدولوژیک</b>
-                                <span>روش‌شناسی‌های نوین تحقیق</span>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>رعایت اصول محرمانگی اطلاعات</span>
+                            </div>
+
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>ارائه خدمات متناسب با نیاز هر پروژه</span>
+                            </div>
+
+                            <div class="feature-item">
+                                <i class="fa-solid fa-check"></i>
+                                <span>پشتیبانی و اصلاحات پس از تحویل</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <span class="section-badge">درباره پژوهش پردازان</span>
-                    <h2 class="section-title text-right">دانش روش‌شناختی در خدمت توسعه داده‌ها</h2>
-
-                    <p class="text-slate-600 leading-9 mt-5 text-right">
-                        تیم پژوهش پردازان با تمرکز بر اصول روش‌شناسی علمی و بهره‌گیری از تکنیک‌های پیشرفته آماری و ابزارهای هوش تجاری، خدمات خود را به پژوهشگران، دانشجویان و نهادها ارائه می‌دهد. هدف ما ساده‌سازی ساختار تحلیل، صحت‌سنجی همه‌جانبه فرضیه‌ها و ایجاد زیرساخت‌های پایگاه داده و وب به صورتی شفاف، دقیق و مستند است.
-                    </p>
-
-                    <div class="grid sm:grid-cols-2 gap-5 mt-8">
-                        <div class="feature-item">
-                            <i class="fa-solid fa-shield-halved"></i>
-                            <div>
-                                <h3>امانت‌داری داده‌ها</h3>
-                                <p>حفظ کامل امنیت اطلاعات و حریم خصوصی مشتریان آکادمیک و سازمانی.</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <i class="fa-solid fa-list-check"></i>
-                            <div>
-                                <h3>تعریف ساختار یافته</h3>
-                                <p>ارائه مستندات شفاف از زمان‌بندی، فازبندی اجرا و هزینه‌های مصوب.</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <i class="fa-solid fa-award"></i>
-                            <div>
-                                <h3>رعایت اصول نگارش علمی</h3>
-                                <p>تفسیر کامل نتایج و آمارهای به دست آمده طبق فرمت‌های مرجع علمی (APA).</p>
-                            </div>
-                        </div>
-
-                        <div class="feature-item">
-                            <i class="fa-solid fa-headset"></i>
-                            <div>
-                                <h3>پشتیبانی پس از تحویل</h3>
-                                <p>پاسخ‌گویی مستمر به بازخوردهای فنی و رفع سؤالات مرتبط با خروجی پروژه.</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             دیدگاه مشتریان
-        ====================================== -->
-        <section class="py-20 md:py-28 bg-white reveal">
+        <!-- Testimonials -->
+        <section class="py-20 md:py-28 reveal">
             <div class="container mx-auto px-5">
-                <div class="max-w-2xl mx-auto text-center">
-                    <span class="section-badge">نظرات همکاران علمی و تجاری</span>
-                    <h2 class="section-title">تجربه پژوهشگران از خدمات پژوهش پردازان</h2>
+                <div class="text-center max-w-3xl mx-auto">
+                    <span class="section-badge">دیدگاه مشتریان</span>
+                    <h2 class="section-title mt-4">اعتماد، نتیجه و همراهی حرفه‌ای</h2>
+                    <p class="section-description mt-5">
+                        بخشی از بازخوردهای دریافتی از افرادی که در پروژه‌های علمی، تحلیلی و اجرایی با ما همکاری داشته‌اند.
+                    </p>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6 mt-12">
-                    <article class="p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="flex text-amber-400 gap-1 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-sm leading-8 text-slate-600">
-                            «مدل‌سازی معادلات ساختاری با نرم‌افزار PLS با دقت بالایی صورت گرفت و گزارش تفسیری تحلیل‌ها کاملاً منطبق بر استانداردهای مورد نیاز ژورنال‌های علمی تدوین شد.»
-                        </p>
-                        <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-100">
-                            <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 font-bold flex items-center justify-center text-sm">م</div>
-                            <span>
-                                <b class="block text-slate-800 text-xs font-bold">دانشجوی مقطع دکتری تخصصی</b>
-                                <small class="text-[10px] text-slate-400 block mt-1">پروژه تحلیل معادلات ساختاری</small>
-                            </span>
-                        </div>
-                    </article>
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mt-14">
 
-                    <article class="p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="flex text-amber-400 gap-1 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-sm leading-8 text-slate-600">
-                            «داشبورد هوش تجاری طراحی شده روی کلان‌داده‌های فروش ما در پلتفرم Power BI به ما کمک شایانی کرد تا روندهای بازار و الگوهای خرید مشتریان را پایش کنیم.»
+                    <div class="testimonial-card">
+                        <p>
+                            در پروژه تحلیل آماری پایان‌نامه، دقت بالا و توضیح شفاف نتایج باعث شد فرآیند دفاع با اطمینان بیشتری انجام شود.
                         </p>
-                        <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-100">
-                            <div class="w-10 h-10 rounded-full bg-violet-100 text-violet-600 font-bold flex items-center justify-center text-sm">ا</div>
-                            <span>
-                                <b class="block text-slate-800 text-xs font-bold">تحلیل‌گر توسعه بازار</b>
-                                <small class="text-[10px] text-slate-400 block mt-1">پروژه هوش تجاری سازمانی</small>
-                            </span>
+                        <div class="testimonial-user">
+                            <div class="w-12 h-12 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h4>دانشجوی کارشناسی ارشد</h4>
+                                <span>پروژه دانشگاهی</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
 
-                    <article class="p-6 md:p-8 rounded-2xl border border-slate-100 bg-slate-50/50 hover:bg-white hover:shadow-xl transition-all duration-300">
-                        <div class="flex text-amber-400 gap-1 mb-4">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p class="text-sm leading-8 text-slate-600">
-                            «طراحی بخش فرانت‌اند وب‌سایت کاملاً بهینه، واکنش‌گرا و سریع اجرا شد و تعامل کاربران با سیستم ثبت نام و فرم‌ها بسیار روان است.»
+                    <div class="testimonial-card">
+                        <p>
+                            داشبورد Power BI طراحی‌شده برای مجموعه ما، گزارش‌گیری را بسیار سریع‌تر و تصمیم‌گیری را مبتنی بر داده کرد.
                         </p>
-                        <div class="flex items-center gap-3 mt-6 pt-6 border-t border-slate-100">
-                            <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 font-bold flex items-center justify-center text-sm">ر</div>
-                            <span>
-                                <b class="block text-slate-800 text-xs font-bold">مدیر فنی استارتاپ خدمات علمی</b>
-                                <small class="text-[10px] text-slate-400 block mt-1">توسعه فرانت‌اند وب‌سایت</small>
-                            </span>
+                        <div class="testimonial-user">
+                            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <h4>کارشناس سازمانی</h4>
+                                <span>پروژه مدیریتی</span>
+                            </div>
                         </div>
-                    </article>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p>
+                            در طراحی سایت و ساختار محتوایی، رویکرد حرفه‌ای، نظم اجرایی و توجه به جزئیات واقعاً قابل‌توجه بود.
+                        </p>
+                        <div class="testimonial-user">
+                            <div class="w-12 h-12 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center">
+                                <i class="fa-solid fa-laptop"></i>
+                            </div>
+                            <div>
+                                <h4>مدیر کسب‌وکار</h4>
+                                <span>پروژه توسعه وب</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- =====================================
-             تماس و ثبت درخواست (اتصال به Formspree)
-        ====================================== -->
+        <!-- Contact -->
         <section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-blue-700 via-blue-800 to-slate-950 reveal">
             <div class="container mx-auto px-5">
                 <div class="grid lg:grid-cols-2 gap-12 items-start">
 
                     <div class="text-white">
-                        <span class="inline-block text-blue-200 font-bold text-sm">ثبت درخواست و مشاوره اولیه</span>
+                        <span class="inline-block text-blue-200 font-bold text-sm">
+                            ثبت درخواست و مشاوره اولیه
+                        </span>
+
                         <h2 class="text-3xl md:text-4xl font-black mt-4 leading-relaxed text-right">
                             پروژه خود را با ما مطرح کنید.
                         </h2>
+
                         <p class="mt-5 text-blue-100 leading-9 max-w-xl text-right">
                             برای دریافت مشاوره، برآورد زمان و هزینه انجام پروژه‌ها، فرم روبه‌رو را تکمیل کنید. مستندات شما به همراه جزئیات پروژه مورد بررسی کارشناسان قرار خواهد گرفت.
                         </p>
 
                         <div class="mt-10 space-y-5">
+
                             <div class="contact-info">
                                 <div><i class="fa-solid fa-envelope"></i></div>
                                 <span>
                                     <small>ایمیل سازمانی</small>
-                                    <b>pazhouheshpardazan@gmail.com</b>
+                                    <b>info@yourdomain.com</b>
                                 </span>
                             </div>
 
@@ -668,189 +543,33 @@
                                 <div><i class="fa-solid fa-phone"></i></div>
                                 <span>
                                     <small>شماره تماس مستقیم</small>
-                                    <b>09367503837</b>
+                                    <b>0912 000 0000</b>
                                 </span>
                             </div>
 
-                            <div class="contact-info">
-                                <div><i class="fa-brands fa-telegram"></i></div>
+                            <a href="https://ble.ir/pajouheshpardazan"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="contact-info">
+                                <div aria-hidden="true">
+                                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.41 6.934-1.64 7.736c-.124.548-.446.683-.904.426l-2.5-1.842-1.206 1.161c-.133.133-.245.245-.502.245l.18-2.564 4.667-4.216c.203-.18-.044-.28-.314-.1l-5.77 3.632-2.485-.775c-.54-.168-.55-.54.112-.798l9.713-3.744c.449-.168.842.1.649.839Z" />
+                                    </svg>
+                                </div>
                                 <span>
                                     <small>کانال رسمی بله</small>
-                                    <b>@pajouheshpardazan</b>
+                                    <b dir="ltr">@pajouheshpardazan</b>
                                 </span>
-                            </div>
+                            </a>
+
                         </div>
                     </div>
 
-                    <!-- فرم تماس متصل به Formspree -->
-                    <form id="contact-form" action="https://formspree.io/f/mqakppnd" method="POST" class="bg-white rounded-3xl p-6 md:p-8 shadow-2xl">
+                    <form id="contact-form" class="bg-white rounded-3xl p-6 md:p-8 shadow-2xl">
                         <h3 class="text-2xl font-black text-slate-900 text-right">فرم ثبت درخواست پروژه</h3>
                         <p class="text-sm text-slate-400 mt-2 mb-6 text-right">پر کردن فیلدهای ستاره‌دار الزامی است.</p>
 
                         <div class="grid sm:grid-cols-2 gap-4 text-right">
                             <div>
-                                <label for="full_name">نام و نام خانوادگی <span>*</span></label>
-                                <input id="full_name" name="full_name" type="text" placeholder="مثلاً دکتر علی احمدی" required>
-                            </div>
-
-                            <div>
-                                <label for="phone">شماره همراه <span>*</span></label>
-                                <input id="phone" name="phone" type="tel" placeholder="۰۹۱۲۱۲۳۴۵۶۷" required>
-                            </div>
-                        </div>
-
-                        <div class="mt-4 text-right">
-                            <label for="email">پست الکترونیک (ایمیل)</label>
-                            <input id="email" name="email" type="email" placeholder="example@email.com">
-                        </div>
-
-                        <div class="mt-4 text-right">
-                            <label for="service">حوزه فعالیت موردنیاز <span>*</span></label>
-                            <select id="service" name="service" required>
-                                <option value="">انتخاب کنید</option>
-                                <option value="statistical-analysis">تحلیل آماری و مدل‌سازی ساختاری (SmartPLS, SPSS)</option>
-                                <option value="academic-writing">روش تحقیق و روش‌شناسی (متا سنتز، ISM)</option>
-                                <option value="business-intelligence">هوش تجاری، Power BI و تحلیل داده</option>
-                                <option value="web-design">طراحی وب‌سایت و توسعه فرانت‌اند</option>
-                                <option value="database-design">طراحی و مدیریت پایگاه داده</option>
-                                <option value="other">سایر خدمات تخصصی</option>
-                            </select>
-                        </div>
-
-                        <div class="mt-4 text-right">
-                            <label for="message">شرح نیاز پژوهشی یا داده‌محور <span>*</span></label>
-                            <textarea id="message" name="message" rows="5"
-                                placeholder="لطفاً فرضیه‌ها، نرم‌افزار هدف، مقطع تحصیلی یا زمان‌بندی پروژه خود را به تفصیل قید کنید..."
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" id="submit-btn"
-                            class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white rounded-xl py-4 font-bold transition-all shadow-lg shadow-blue-200 flex items-center justify-center gap-2">
-                            <span>ارسال اطلاعات درخواست</span>
-                            <i class="fa-solid fa-paper-plane text-xs"></i>
-                        </button>
-
-                        <div id="form-status" class="hidden text-center text-sm mt-4 font-bold"></div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- =====================================
-         فوتر
-    ====================================== -->
-    <footer class="bg-slate-950 text-slate-400 pt-14 pb-7">
-        <div class="container mx-auto px-5">
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-slate-900">
-
-                <div>
-                    <div class="flex items-center gap-3">
-                        <div class="logo-icon bg-blue-600 text-white">
-                            <i class="fa-solid fa-chart-line text-lg"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-white font-black text-lg leading-none">پژوهش پردازان</h3>
-                            <span class="text-[10px] text-slate-500 block mt-1">راهکارهای علمی و تحلیل داده</span>
-                        </div>
-                    </div>
-
-                    <p class="leading-8 text-sm mt-5 text-right">
-                        ارائه‌دهنده سرویس‌های تخصصی تحلیل آماری، روش‌شناسی پژوهش، مدل‌سازی ساختاری، هوش تجاری و پیاده‌سازی پایگاه داده.
-                    </p>
-                </div>
-
-                <div>
-                    <h3 class="footer-title">دسترسی سریع</h3>
-                    <ul class="footer-links p-0 list-none">
-                        <li><a href="index.html">صفحه نخست</a></li>
-                        <li><a href="services.html">خدمات تخصصی</a></li>
-                        <li><a href="index.html#portfolio">نمونه‌های اجرا شده</a></li>
-                        <li><a href="index.html#about">درباره ما</a></li>
-                        <li><a href="contact.html">تماس با ما</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer-title">محورهای تخصصی</h3>
-                    <ul class="footer-links p-0 list-none">
-                        <li><a href="services.html">تحلیل آماری (SmartPLS/SPSS)</a></li>
-                        <li><a href="services.html">روش تحقیق (متا سنتز/ISM)</a></li>
-                        <li><a href="services.html">داشبوردهای مدیریتی (Power BI)</a></li>
-                        <li><a href="services.html">طراحی وب و پایگاه داده</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h3 class="footer-title">ارتباطات علمی</h3>
-                    <p class="text-sm leading-7 text-right">جهت دریافت اطلاعات دوره‌های کارگاهی و مطالب آموزشی ما را دنبال کنید.</p>
-
-                    <div class="flex gap-3 mt-5">
-                        <a href="https://t.me/arash_pb" class="social-icon" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
-                        <a href="#" class="social-icon" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-icon" aria-label="لینکدین"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-                <p>© ۱۴۰۵ تمامی حقوق این وب‌سایت متعلق به پژوهش پردازان است.</p>
-                <p>طراحی و توسعه با <i class="fa-solid fa-heart text-rose-500 mx-1"></i></p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- دکمه بازگشت به بالا -->
-    <button id="back-to-top" class="back-to-top" aria-label="بازگشت به بالا">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript اختصاصی و کد AJAX فرم تماس -->
-    <script src="assets/js/main.js"></script>
-    <script>
-        const form = document.getElementById("contact-form");
-        const statusDiv = document.getElementById("form-status");
-        const submitBtn = document.getElementById("submit-btn");
-
-        form.addEventListener("submit", async function(event) {
-            event.preventDefault();
-            submitBtn.disabled = true;
-            submitBtn.querySelector("span").textContent = "در حال ارسال...";
-            
-            const data = new FormData(event.target);
-            
-            try {
-                const response = await fetch(event.target.action, {
-                    method: form.method,
-                    body: data,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-                
-                if (response.ok) {
-                    statusDiv.textContent = "درخواست شما با موفقیت ارسال شد. به زودی با شما تماس خواهیم گرفت.";
-                    statusDiv.className = "text-center text-sm mt-4 font-bold text-emerald-600";
-                    form.reset();
-                } else {
-                    const result = await response.json();
-                    if (Object.hasOwnProperty.call(result, 'errors')) {
-                        statusDiv.textContent = result.errors.map(error => error.message).join(", ");
-                    } else {
-                        statusDiv.textContent = "متأسفانه در ارسال پیام خطایی رخ داد. مجدداً تلاش فرمایید.";
-                    }
-                    statusDiv.className = "text-center text-sm mt-4 font-bold text-rose-600";
-                }
-            } catch (error) {
-                statusDiv.textContent = "برقراری ارتباط با سرور با خطا مواجه شد. لطفاً اتصال اینترنت خود را بررسی کنید.";
-                statusDiv.className = "text-center text-sm mt-4 font-bold text-rose-600";
-            } finally {
-                statusDiv.classList.remove("hidden");
-                submitBtn.disabled = false;
-                submitBtn.querySelector("span").textContent = "ارسال اطلاعات درخواست";
-            }
-        });
-    </script>
-</body>
-
-</html>
+                                <label for="full_name">نام و نام خانوادگی <span>*</spa
