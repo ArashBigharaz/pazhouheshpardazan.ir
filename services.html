@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>خدمات | پژوهش پردازان</title>
-    <meta name="description" content="خدمات پژوهشی، آماری، طراحی سایت، هوش تجاری و مشاوره تخصصی در پژوهش پردازان؛ همراهی حرفه‌ای از ایده تا اجرا.">
+    <title>خدمات تخصصی | پژوهش پردازان</title>
+    <meta name="description" content="ارائه خدمات تخصصی پژوهشی، تحلیل آماری (SPSS, SmartPLS)، هوش تجاری (Power BI)، طراحی داشبورد و توسعه سامانه‌های وب برای پژوهشگران و سازمان‌ها.">
+    
+    <!-- سئو و ربات‌ها -->
+    <link rel="canonical" href="https://pazhouheshpardazan.ir/services.html" />
+    <meta name="robots" content="index, follow">
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- داده‌های ساختاریافته گوگل (JSON-LD) برای خدمات -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "پژوهش پردازان",
+      "description": "ارائه خدمات تخصصی تحلیل آماری، روش تحقیق، هوش تجاری و طراحی وب برای پژوهشگران و سازمان‌ها.",
+      "url": "https://pazhouheshpardazan.ir",
+      "areaServed": "IR"
+    }
+    </script>
 </head>
+
 <body class="bg-slate-50 text-slate-800">
 
+    <!-- Header -->
     <header class="site-header fixed top-0 right-0 left-0 z-50">
         <div class="container mx-auto px-5">
             <div class="flex items-center justify-between h-20">
-                <a href="index.html" class="flex items-center gap-3 group" aria-label="صفحه اصلی پژوهش پردازان">
-                    <img
-                        src="assets/images/logo.jpg"
-                        alt="لوگوی پژوهش پردازان"
-                        class="w-14 h-14 md:w-16 md:h-16 object-contain rounded-xl"
-                    >
 
+                <a href="index.html" class="flex items-center gap-3 group" aria-label="صفحه اصلی پژوهش پردازان">
+                    <img src="assets/images/logo.jpg" alt="لوگوی پژوهش پردازان" class="w-14 h-14 md:w-16 md:h-16 object-contain rounded-xl">
                     <div>
-                        <h1 class="text-lg md:text-xl font-extrabold text-slate-900 leading-tight">
-                            پژوهش پردازان
-                        </h1>
-                        <p class="text-xs md:text-sm text-slate-500">
-                            راهکارهای پژوهش و داده
-                        </p>
+                        <h1 class="text-lg md:text-xl font-extrabold text-slate-900 leading-tight">پژوهش پردازان</h1>
+                        <p class="text-xs md:text-sm text-slate-500">راهکارهای پژوهش و تحلیل داده</p>
                     </div>
                 </a>
 
@@ -40,68 +48,55 @@
                     <a class="nav-link" href="contact.html">تماس با ما</a>
                 </nav>
 
-                <div class="hidden lg:block">
-                    <a href="contact.html" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-3 rounded-xl shadow-lg shadow-blue-600/20 transition-all">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <span>شروع همکاری</span>
-                    </a>
-                </div>
+                <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-blue-200">
+                    <i class="fa-solid fa-paper-plane text-xs"></i>
+                    شروع همکاری
+                </a>
 
-                <button id="mobile-menu-button"
-                        class="lg:hidden w-11 h-11 bg-slate-100 hover:bg-slate-200 rounded-xl transition flex items-center justify-center"
-                        aria-label="باز کردن منو"
-                        aria-expanded="false"
-                        type="button">
-                    <i class="fa-solid fa-bars text-slate-700 text-lg"></i>
+                <button id="mobile-menu-button" class="lg:hidden w-11 h-11 bg-slate-100 hover:bg-slate-200 rounded-xl transition flex items-center justify-center" aria-label="باز کردن منو" type="button">
+                    <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
+        </div>
 
-            <div id="mobile-menu" class="mobile-menu lg:hidden">
-                <div class="mx-0 mb-4 rounded-2xl bg-white/95 backdrop-blur-xl border border-slate-200 shadow-xl p-4">
-                    <nav class="flex flex-col gap-1">
-                        <a class="mobile-nav-link" href="index.html">خانه</a>
-                        <a class="mobile-nav-link active" href="services.html">خدمات ما</a>
-                        <a class="mobile-nav-link" href="index.html#process">فرایند همکاری</a>
-                        <a class="mobile-nav-link" href="index.html#portfolio">نمونه‌کارها</a>
-                        <a class="mobile-nav-link" href="index.html#about">درباره ما</a>
-                        <a class="mobile-nav-link" href="contact.html">تماس با ما</a>
-                    </nav>
-
-                    <div class="mt-4 pt-4 border-t border-slate-200">
-                        <a href="contact.html" class="flex items-center justify-center gap-2 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold px-5 py-3 rounded-xl transition-all">
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <span>ثبت درخواست و مشاوره</span>
-                        </a>
-                    </div>
-                </div>
+        <div id="mobile-menu" class="mobile-menu lg:hidden">
+            <div class="container mx-auto px-5 py-5 space-y-1">
+                <a class="mobile-nav-link" href="index.html">خانه</a>
+                <a class="mobile-nav-link active" href="services.html">خدمات ما</a>
+                <a class="mobile-nav-link" href="index.html#process">فرایند همکاری</a>
+                <a class="mobile-nav-link" href="contact.html">تماس با ما</a>
+                <a href="contact.html" class="mobile-nav-link mt-3 text-center bg-blue-600 text-white px-5 py-3 rounded-xl font-bold">
+                    ثبت درخواست و مشاوره
+                </a>
             </div>
         </div>
     </header>
 
     <main>
+        <!-- Services Section -->
         <section class="services-page pt-36 pb-20 md:pt-44 md:pb-28">
             <div class="container mx-auto px-5">
                 <div class="max-w-3xl mx-auto text-center mb-14">
-                    <span class="section-badge">خدمات تخصصی</span>
-                    <h2 class="section-title mt-5">راهکارهای حرفه‌ای برای پژوهش، داده و کسب‌وکار</h2>
-                    <p class="section-description mt-5">
-                        از تحلیل آماری و نگارش علمی تا طراحی سایت، هوش تجاری و طراحی پایگاه داده، در کنار شما هستیم تا پروژه‌ها با دقت، سرعت و کیفیت بالا اجرا شوند.
+                    <span class="section-badge">خدمات تخصصی ما</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-slate-900 mt-5 leading-tight">راهکارهای حرفه‌ای برای پژوهش و کسب‌وکار</h2>
+                    <p class="mt-5 text-slate-600 leading-8">
+                        ترکیب دانش متدولوژیک و ابزارهای فنی مدرن؛ از تحلیل‌های دقیق آماری تا توسعه سامانه‌های هوشمند مدیریتی.
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7">
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 1 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-chart-column"></i>
                         </div>
                         <h3 class="text-xl font-extrabold text-slate-900 mb-3">تحلیل آماری و مدل‌سازی</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            تحلیل داده‌های کمی، آزمون فرضیه‌ها، مدل‌سازی پیشرفته و ارائه خروجی‌های قابل استناد برای مقالات، پایان‌نامه‌ها و گزارش‌های مدیریتی.
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            تحلیل داده‌های کمی، آزمون فرضیه‌ها، مدل‌سازی معادلات ساختاری (SEM) و ارائه خروجی‌های معتبر علمی.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>رگرسیون، ANOVA، همبستگی و آزمون‌های نرمال بودن</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>SEM، SmartPLS، SPSS، Stata و EViews</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>تفسیر حرفه‌ای خروجی‌ها و نگارش بخش نتایج</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>مدل‌سازی SmartPLS، Amos و SPSS</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>رگرسیون، تحلیل عاملی و آزمون‌های پیشرفته</span></li>
                         </ul>
                         <a href="contact.html?service=statistical-analysis" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -109,18 +104,18 @@
                         </a>
                     </article>
 
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 2 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-pen-nib"></i>
                         </div>
                         <h3 class="text-xl font-extrabold text-slate-900 mb-3">نگارش علمی و روش تحقیق</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            تدوین پروپوزال، فصل‌بندی پایان‌نامه، پیشینه پژوهش، چارچوب مفهومی و نگارش علمی مطابق استانداردهای دانشگاهی و نشریات معتبر.
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            تدوین پروپوزال، چارچوب مفهومی و نگارش علمی پایان‌نامه و رساله بر اساس استانداردهای دانشگاهی.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>انتخاب موضوع، بیان مسئله و تدوین فرضیه</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>متن علمی روان، دقیق و ساختاریافته</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>رعایت APA، منابع و ارجاع‌دهی استاندارد</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>روش‌شناسی تحقیق (متا سنتز، ISM)</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>رعایت دقیق اصول APA و ارجاع‌دهی</span></li>
                         </ul>
                         <a href="contact.html?service=academic-writing" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -128,18 +123,18 @@
                         </a>
                     </article>
 
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 3 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-chart-pie"></i>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">هوش تجاری و داشبورد مدیریتی</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            طراحی داشبوردهای مدیریتی، KPI، گزارش‌های تحلیلی و یکپارچه‌سازی داده‌ها برای تصمیم‌گیری سریع‌تر و دقیق‌تر.
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">هوش تجاری (Power BI)</h3>
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            تبدیل داده‌های خام سازمانی به داشبوردهای مدیریتی KPI برای تسهیل در تصمیم‌گیری‌های استراتژیک.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>Power BI، Excel و گزارش‌سازی مدیریتی</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>طراحی شاخص‌ها و مدل‌های تصمیم‌گیری</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>نمایش داده‌ها به‌صورت حرفه‌ای و قابل فهم</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>داشبوردهای هوشمند Power BI</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>یکپارچه‌سازی و تحلیل روند داده‌ها</span></li>
                         </ul>
                         <a href="contact.html?service=business-intelligence" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -147,18 +142,18 @@
                         </a>
                     </article>
 
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 4 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-cyan-50 text-cyan-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-laptop-code"></i>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">طراحی سایت و سامانه</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            طراحی وب‌سایت‌های شرکتی، خدماتی و سامانه‌های اختصاصی با رویکرد مدرن، واکنش‌گرا، سریع و بهینه برای موتورهای جست‌وجو.
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">طراحی وب‌سایت و سامانه</h3>
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            پیاده‌سازی وب‌سایت‌های شرکتی و سامانه‌های اختصاصی با رویکرد مدرن، ریسپانسیو و بهینه برای سئو.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>HTML، CSS، Tailwind، Laravel و UI مدرن</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>طراحی ریسپانسیو و تجربه کاربری بهتر</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>فرم‌ها، صفحات فرود و پنل‌های اختصاصی</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>توسعه با Laravel، Tailwind و UI مدرن</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>طراحی پنل‌های کاربری اختصاصی</span></li>
                         </ul>
                         <a href="contact.html?service=web-design" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -166,18 +161,18 @@
                         </a>
                     </article>
 
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 5 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-violet-50 text-violet-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-database"></i>
                         </div>
                         <h3 class="text-xl font-extrabold text-slate-900 mb-3">طراحی پایگاه داده</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            طراحی، نرمال‌سازی و بهینه‌سازی پایگاه داده برای سیستم‌های اطلاعاتی، گزارش‌گیری و یکپارچگی داده در سازمان‌ها.
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            طراحی ساختار داده، نرمال‌سازی و مدیریت پایگاه داده‌های SQL Server برای سیستم‌های اطلاعاتی.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>مدل‌سازی داده و طراحی ERD</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>SQL Server، ساختار جداول و ایندکس‌ها</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>کارایی، امنیت و نگه‌داری آسان‌تر داده</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>مدل‌سازی ERD و بهینه‌سازی کوئری‌ها</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>امنیت داده و ایندکس‌گذاری پیشرفته</span></li>
                         </ul>
                         <a href="contact.html?service=database-design" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -185,18 +180,18 @@
                         </a>
                     </article>
 
-                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                    <!-- Service 6 -->
+                    <article class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300">
                         <div class="w-16 h-16 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-6">
                             <i class="fa-solid fa-comments"></i>
                         </div>
-                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">مشاوره پژوهشی و سازمانی</h3>
-                        <p class="text-slate-600 leading-8 mb-6">
-                            ارائه مشاوره برای انتخاب روش تحقیق، تحلیل داده، تدوین مسئله، برنامه‌ریزی پروژه و تصمیم‌سازی در محیط‌های دانشگاهی و سازمانی.
+                        <h3 class="text-xl font-extrabold text-slate-900 mb-3">مشاوره پژوهشی</h3>
+                        <p class="text-slate-600 leading-8 mb-6 text-sm">
+                            پشتیبانی و مشاوره در تمامی مراحل پژوهش، از انتخاب موضوع تا ارائه نهایی و دفاع.
                         </p>
                         <ul class="space-y-3 text-sm text-slate-600 mb-8">
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>جلسات آنلاین و پشتیبانی مرحله‌به‌مرحله</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>تعیین مسیر پروژه و کاهش خطاهای پژوهشی</span></li>
-                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>پاسخ‌گویی حرفه‌ای و محرمانگی اطلاعات</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>پشتیبانی آنلاین و بررسی مرحله‌به‌مرحله</span></li>
+                            <li class="flex items-start gap-3"><i class="fa-solid fa-circle-check text-emerald-500 mt-1"></i><span>کاهش خطاهای پژوهشی و علمی</span></li>
                         </ul>
                         <a href="contact.html?service=consulting" class="inline-flex items-center gap-2 text-blue-700 font-bold hover:text-blue-800 transition-colors">
                             <span>مشاوره این خدمت</span>
@@ -207,162 +202,86 @@
             </div>
         </section>
 
+        <!-- CTA Section -->
         <section class="py-16 bg-slate-100">
             <div class="container mx-auto px-5">
-                <div class="max-w-3xl mx-auto text-center mb-12">
-                    <span class="section-badge">نحوه همکاری</span>
-                    <h2 class="section-title mt-5">از درخواست تا تحویل، شفاف و مرحله‌به‌مرحله</h2>
-                    <p class="section-description mt-5">
-                        فرایند همکاری به‌صورت منظم و قابل پیگیری طراحی شد تا در هر مرحله بدانید در چه وضعیتی قرار دارید و چه خروجی‌ای دریافت می‌کنید.
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-                    <article class="bg-white rounded-2xl p-6 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto rounded-2xl bg-blue-50 text-blue-700 flex items-center justify-center text-2xl mb-5">
-                            <i class="fa-solid fa-file-signature"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">۱. ثبت درخواست</h3>
-                        <p class="text-sm text-slate-600 leading-7">
-                            نیاز خود را از طریق فرم تماس یا لینک خدمات ثبت کنید تا موضوع، هدف و اولویت‌ها مشخص شود.
-                        </p>
-                    </article>
-
-                    <article class="bg-white rounded-2xl p-6 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl mb-5">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">۲. بررسی و پیشنهاد</h3>
-                        <p class="text-sm text-slate-600 leading-7">
-                            درخواست بررسی می‌شود و مناسب‌ترین راهکار، زمان‌بندی و برآورد هزینه پیشنهاد می‌گردد.
-                        </p>
-                    </article>
-
-                    <article class="bg-white rounded-2xl p-6 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto rounded-2xl bg-violet-50 text-violet-700 flex items-center justify-center text-2xl mb-5">
-                            <i class="fa-solid fa-gear"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">۳. اجرا و بازخورد</h3>
-                        <p class="text-sm text-slate-600 leading-7">
-                            کار در مسیر توافق‌شده انجام می‌شود و بازخوردهای شما در طول اجرا اعمال خواهد شد.
-                        </p>
-                    </article>
-
-                    <article class="bg-white rounded-2xl p-6 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-                        <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-5">
-                            <i class="fa-solid fa-circle-check"></i>
-                        </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-3">۴. تحویل نهایی</h3>
-                        <p class="text-sm text-slate-600 leading-7">
-                            خروجی نهایی با دقت بازبینی و به‌صورت کامل تحویل داده می‌شود.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-16">
-            <div class="container mx-auto px-5">
                 <div class="max-w-4xl mx-auto bg-gradient-to-br from-blue-700 via-blue-800 to-slate-950 text-white rounded-3xl p-8 md:p-12 text-center shadow-2xl">
-                    <span class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/15 text-sm font-medium">
-                        <i class="fa-solid fa-star"></i>
-                        آماده شروع همکاری هستیم
-                    </span>
-                    <h2 class="text-3xl md:text-4xl font-extrabold mt-6">برای پروژه بعدی خود، یک تیم حرفه‌ای کنار شماست</h2>
+                    <h2 class="text-3xl font-black">آماده شروع همکاری هستیم</h2>
                     <p class="text-white/85 leading-8 mt-5 max-w-2xl mx-auto">
-                        اگر برای تحلیل داده، نگارش علمی، طراحی سایت یا مشاوره پژوهشی نیاز به همراهی تخصصی دارید، همین حالا درخواست خود را ثبت کنید تا در کوتاه‌ترین زمان پاسخ داده شود.
+                        تخصص خود را در اختیار پروژه‌های شما می‌گذاریم تا به نتایج دقیق و حرفه‌ای دست یابید.
                     </p>
                     <a href="contact.html" class="inline-flex items-center gap-2 mt-8 bg-white text-blue-800 font-bold px-8 py-4 rounded-xl hover:bg-blue-50 transition-all shadow-lg">
                         <i class="fa-solid fa-paper-plane"></i>
-                        <span>تماس و دریافت مشاوره</span>
+                        <span>ثبت درخواست مشاوره</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 pt-14 pb-7">
         <div class="container mx-auto px-5">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-slate-800">
                 <div>
                     <a href="index.html" class="flex items-center gap-3 mb-5">
-                        <div class="logo-icon">
+                        <span class="logo-icon bg-blue-600 text-white p-2 rounded-xl flex items-center justify-center w-10 h-10">
                             <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-extrabold text-white leading-tight">پژوهش پردازان</h3>
-                            <p class="text-sm text-slate-500">راهکارهای پژوهش و داده</p>
-                        </div>
+                        </span>
+                        <span class="text-white font-black text-lg">پژوهش پردازان</span>
                     </a>
-                    <p class="leading-8 text-sm">
-                        همراهی تخصصی در حوزه پژوهش، تحلیل داده، طراحی سامانه و مشاوره سازمانی با تمرکز بر کیفیت، دقت و نتیجه‌محوری.
+                    <p class="text-sm leading-7 text-justify">
+                        همراه پژوهشگران، مدیران و کسب‌وکارها در تحلیل داده، متدولوژی‌های نوین روش تحقیق، هوش تجاری و توسعه فرانت‌اند.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="footer-title">دسترسی سریع</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">خانه</a></li>
-                        <li><a href="services.html">خدمات</a></li>
-                        <li><a href="index.html#process">فرایند همکاری</a></li>
-                        <li><a href="index.html#portfolio">نمونه‌کارها</a></li>
-                        <li><a href="index.html#about">درباره ما</a></li>
-                        <li><a href="contact.html">تماس با ما</a></li>
+                    <h4 class="text-white font-bold mb-4">دسترسی سریع</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="hover:text-white transition-colors">صفحه نخست</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">خدمات تخصصی</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">تماس با ما</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="footer-title">خدمات</h4>
-                    <ul class="footer-links">
-                        <li><a href="contact.html?service=statistical-analysis">تحلیل آماری و مدل‌سازی</a></li>
-                        <li><a href="contact.html?service=academic-writing">نگارش علمی و روش تحقیق</a></li>
-                        <li><a href="contact.html?service=business-intelligence">هوش تجاری و داشبورد مدیریتی</a></li>
-                        <li><a href="contact.html?service=web-design">طراحی سایت و سامانه</a></li>
-                        <li><a href="contact.html?service=database-design">طراحی پایگاه داده</a></li>
-                        <li><a href="contact.html?service=consulting">مشاوره پژوهشی و سازمانی</a></li>
+                    <h4 class="text-white font-bold mb-4">خدمات</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="contact.html?service=statistical-analysis" class="hover:text-white transition-colors">تحلیل آماری</a></li>
+                        <li><a href="contact.html?service=academic-writing" class="hover:text-white transition-colors">نگارش علمی</a></li>
+                        <li><a href="contact.html?service=web-design" class="hover:text-white transition-colors">طراحی وب‌سایت</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="footer-title">شبکه‌های اجتماعی</h4>
-                    <div class="flex flex-wrap gap-3">
-                        <a href="#" class="social-icon" aria-label="تلگرام">
-                            <i class="fa-brands fa-telegram"></i>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="اینستاگرام">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="لینکدین">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon" aria-label="واتساپ">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
+                    <h4 class="text-white font-bold mb-4">شبکه‌های اجتماعی</h4>
+                    <div class="flex items-center gap-3">
+                        <a href="https://t.me/arash_pb" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center hover:bg-blue-600 transition-colors" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
                     </div>
-                    <p class="text-sm leading-8 mt-5">
-                        پیش از انتشار نهایی، لینک‌های واقعی شبکه‌های اجتماعی و اطلاعات تماس را جایگزین کنید.
-                    </p>
                 </div>
             </div>
-
-            <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-                <p>© <span id="current-year">2026</span> پژوهش پردازان. تمامی حقوق محفوظ است.</p>
-                <p>طراحی و توسعه با تمرکز بر تجربه کاربری و عملکرد بهینه</p>
+            <div class="pt-6 text-center text-sm text-slate-500">
+                © ۱۴۰۵ پژوهش پردازان. تمامی حقوق محفوظ است.
             </div>
         </div>
     </footer>
 
-    <button id="back-to-top"
-            class="back-to-top"
-            aria-label="بازگشت به بالا"
-            type="button">
+    <button id="back-to-top" class="fixed bottom-6 left-6 w-12 h-12 bg-blue-600 text-white rounded-xl shadow-lg flex items-center justify-center hover:bg-blue-700 transition-all opacity-0 invisible" aria-label="بازگشت به بالا" type="button">
         <i class="fa-solid fa-arrow-up"></i>
     </button>
 
     <script src="assets/js/main.js"></script>
     <script>
-        const yearEl = document.getElementById('current-year');
-        if (yearEl) yearEl.textContent = new Date().getFullYear();
+        // Back to top visibility
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('back-to-top');
+            if (window.scrollY > 300) {
+                btn.classList.remove('opacity-0', 'invisible');
+            } else {
+                btn.classList.add('opacity-0', 'invisible');
+            }
+        });
+        document.getElementById('back-to-top').addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
     </script>
 </body>
 </html>
