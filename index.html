@@ -572,4 +572,130 @@
 
                         <div class="grid sm:grid-cols-2 gap-4 text-right">
                             <div>
-                                <label for="full_name">نام و نام خانوادگی <span>*</spa
+                                <label for="full_name">نام و نام خانوادگی <span>*</span></label>
+                                <input id="full_name" name="full_name" type="text" required>
+                            </div>
+
+                            <div>
+                                <label for="phone">شماره همراه <span>*</span></label>
+                                <input id="phone" name="phone" type="text" required>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="email">ایمیل</label>
+                                <input id="email" name="email" type="email">
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="service">حوزه خدمت <span>*</span></label>
+                                <select id="service" name="service" required>
+                                    <option value="">انتخاب کنید</option>
+                                    <option value="statistical-analysis">تحلیل آماری</option>
+                                    <option value="academic-writing">نگارش علمی</option>
+                                    <option value="business-intelligence">هوش تجاری</option>
+                                    <option value="web-design">طراحی وب</option>
+                                    <option value="database-design">طراحی پایگاه داده</option>
+                                    <option value="other">سایر</option>
+                                </select>
+                            </div>
+
+                            <div class="sm:col-span-2">
+                                <label for="message">توضیحات پروژه <span>*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl font-bold transition">
+                            ارسال درخواست
+                        </button>
+
+                        <p id="form-message" class="hidden text-center text-sm mt-4"></p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- =====================================
+         Footer
+    ====================================== -->
+    <footer class="bg-slate-950 text-slate-400 pt-14 pb-7">
+        <div class="container mx-auto px-5">
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-10 pb-10 border-b border-slate-800">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="assets/images/logo.jpg" alt="لوگوی پژوهش پردازان" class="logo-icon">
+                        <div>
+                            <h3 class="text-white font-black text-lg">پژوهش پردازان</h3>
+                            <p class="text-sm text-slate-500">تحلیل، پژوهش و توسعه</p>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-8">
+                        ارائه خدمات تخصصی در حوزه تحلیل آماری، روش تحقیق، نگارش علمی، داشبوردهای مدیریتی، طراحی سایت و پایگاه داده.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">دسترسی سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">خانه</a></li>
+                        <li><a href="services.html">خدمات</a></li>
+                        <li><a href="index.html#portfolio">نمونه‌کارها</a></li>
+                        <li><a href="index.html#about">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">خدمات</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">تحلیل آماری</a></li>
+                        <li><a href="services.html">نگارش علمی</a></li>
+                        <li><a href="services.html">هوش تجاری</a></li>
+                        <li><a href="services.html">طراحی وب</a></li>
+                        <li><a href="services.html">پایگاه داده</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">شبکه‌های اجتماعی</h3>
+                    <p class="text-sm leading-7">برای اطلاع از خدمات و مطالب آموزشی، ما را دنبال کنید.</p>
+
+                    <div class="flex gap-3 mt-5">
+                        <a href="https://ble.ir/pajouheshpardazan"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-icon"
+                            aria-label="کانال رسمی بله">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2Zm4.41 6.934-1.64 7.736c-.124.548-.446.683-.904.426l-2.5-1.842-1.206 1.161c-.133.133-.245.245-.502.245l.18-2.564 4.667-4.216c.203-.18-.044-.28-.314-.1l-5.77 3.632-2.485-.775c-.54-.168-.55-.54.112-.798l9.713-3.744c.449-.168.842.1.649.839Z" />
+                            </svg>
+                        </a>
+
+                        <a href="#" class="social-icon" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="لینکدین"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon" aria-label="واتساپ"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 text-center text-sm text-slate-500">
+                تمامی حقوق این وب‌سایت متعلق به پژوهش پردازان است.
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="بازگشت به بالا">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
